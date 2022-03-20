@@ -68,7 +68,7 @@ namespace Black_Mesa_HRMS
             {
                 endpoints.MapControllerRoute(
                     name: "default",
-                    pattern: "{controller=Home}/{action=Index}/{id?}");
+                    pattern: "{controller=Account}/{action=SignIn}/{id?}");
             });
         }
     }

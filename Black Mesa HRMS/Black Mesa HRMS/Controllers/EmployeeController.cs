@@ -43,10 +43,17 @@ namespace Black_Mesa_HRMS.Controllers
             {
                 formInfoVM.SalaryAmount = salary.Amount;
             }
-            if (_context.Salaries.Where(x => x.Employee == formInfoVM.Employee && x.UntilDate != null).OrderBy(x => x.UntilDate).First() != null)
+            try
             {
-                Salary pastSalary = _context.Salaries.Where(x => x.Employee == formInfoVM.Employee && x.UntilDate != null).OrderBy(x => x.UntilDate).First();
-                formInfoVM.SalaryLastModifiedDate = pastSalary.UntilDate;
+                if (_context.Salaries.Where(x => x.Employee == formInfoVM.Employee && x.UntilDate != null).OrderBy(x => x.UntilDate).First() != null)
+                {
+                    Salary pastSalary = _context.Salaries.Where(x => x.Employee == formInfoVM.Employee && x.UntilDate != null).OrderBy(x => x.UntilDate).First();
+                    formInfoVM.SalaryLastModifiedDate = pastSalary.UntilDate;
+                }
+            }
+            catch (Exception)
+            {
+                formInfoVM.SalaryLastModifiedDate = null;
             }
             List<Bonus> bonusList = _context.Bonuses.Where(x => x.Employee == formInfoVM.Employee).OrderBy(x => x.DateGiven).ToList();
             if(bonusList.Count() != 0)
