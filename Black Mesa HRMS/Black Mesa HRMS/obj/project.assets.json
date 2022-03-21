@@ -8769,19 +8769,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Huseyn\\.nuget\\packages\\": {}
+    "C:\\Users\\Huseyn\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Huseyn\\Desktop\\drag-and-drop-master\\drag-and-drop-master\\Black Mesa HRMS\\Black Mesa HRMS\\Black Mesa HRMS.csproj",
+      "projectUniqueName": "C:\\Users\\Huseyn\\Desktop\\Black Mesa HRMS\\Black Mesa HRMS\\Black Mesa HRMS.csproj",
       "projectName": "Black Mesa HRMS",
-      "projectPath": "C:\\Users\\Huseyn\\Desktop\\drag-and-drop-master\\drag-and-drop-master\\Black Mesa HRMS\\Black Mesa HRMS\\Black Mesa HRMS.csproj",
+      "projectPath": "C:\\Users\\Huseyn\\Desktop\\Black Mesa HRMS\\Black Mesa HRMS\\Black Mesa HRMS.csproj",
       "packagesPath": "C:\\Users\\Huseyn\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Huseyn\\Desktop\\drag-and-drop-master\\drag-and-drop-master\\Black Mesa HRMS\\Black Mesa HRMS\\obj\\",
+      "outputPath": "C:\\Users\\Huseyn\\Desktop\\Black Mesa HRMS\\Black Mesa HRMS\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
         "C:\\Users\\Huseyn\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -8862,7 +8867,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.406\\RuntimeIdentifierGraph.json"
       }
     }
   }
